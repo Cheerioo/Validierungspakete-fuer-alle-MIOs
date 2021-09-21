@@ -1,0 +1,23 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="2071b7f6-6574-46c1-b3a9-e4ef8a93500e" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_ZAEB_Observation_Gapless_Documentation|1.1.0" />
+  </meta>
+  <text>
+    <status value="extensions" />
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <p>lückenlose Dokumentation</p>
+    </div>
+  </text>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_ZAEB_Disclaimer">
+    <valueString value="Die Vertragsparteien sind sich einig, dass der Zahnarzt im Nachhinein für eine falsche Jahresangabe nicht haftbar gemacht werden kann, wenn die Krankenkasse bei der Prüfung eines Heil- und Kostenplanes keinen Bonus oder eine andere Bonusstufe feststellt." />
+  </extension>
+  <status value="final" />
+  <code>
+    <text value="Datum, seit dem eine lückenlose Dokumentation in dem Papier-Zahnbonusheft nachweislich vorliegt." />
+  </code>
+  <subject>
+    <reference value="urn:uuid:ba5f36ef-84e9-4a83-852b-e74dac4014ed" />
+  </subject>
+  <valueDateTime value="2015-01-02" />
+</Observation>
