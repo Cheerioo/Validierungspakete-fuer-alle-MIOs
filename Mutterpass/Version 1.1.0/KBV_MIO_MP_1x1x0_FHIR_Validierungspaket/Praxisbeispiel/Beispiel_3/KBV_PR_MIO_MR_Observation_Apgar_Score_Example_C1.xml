@@ -1,0 +1,58 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="893ba5f9-28b9-4c13-b833-bbcf87678e81" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Apgar_Score|1.1.0" />
+  </meta>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+      <code value="169922007" />
+      <display value="Apgar score at 10 minutes (observable entity)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Apgar zum Zeitpunkt 10 Min. nach Geburt" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+    <coding>
+      <system value="http://loinc.org" />
+      <version value="2.71" />
+      <code value="9271-8" />
+      <display value="10 minute Apgar Score">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Apgar zum Zeitpunkt 10 Min. nach Geburt" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:d6ed8917-0956-4f5c-b131-fdf05781223d" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:13e37fe2-cf83-4ae2-bc31-cec96160baee" />
+  </encounter>
+  <effectiveDateTime value="2022-05-01" />
+  <performer>
+    <reference value="urn:uuid:0d20fdb0-624d-4899-a8fe-dedeb50ca17d" />
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+      <code value="49544001" />
+      <display value="Apgar score 10 (finding)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Apgar 10" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

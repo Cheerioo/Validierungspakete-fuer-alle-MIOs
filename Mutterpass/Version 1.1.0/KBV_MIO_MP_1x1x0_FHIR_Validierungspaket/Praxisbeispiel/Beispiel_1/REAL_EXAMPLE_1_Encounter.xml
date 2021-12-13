@@ -1,0 +1,25 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="b7a1460a-b530-4c77-9369-1c4886d74759" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Encounter_General|1.1.0" />
+  </meta>
+  <status value="finished" />
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+    <version value="2.0.0" />
+    <code value="AMB" />
+    <display value="ambulatory" />
+  </class>
+  <subject>
+    <reference value="urn:uuid:eed581f6-6830-4ca2-9e17-8b3aba3b82fb" />
+  </subject>
+  <participant>
+    <individual>
+      <reference value="urn:uuid:b9cfa843-3b07-4b02-80f9-3370e3f9563e" />
+    </individual>
+  </participant>
+  <period>
+    <start value="2021-06-29" />
+  </period>
+</Encounter>

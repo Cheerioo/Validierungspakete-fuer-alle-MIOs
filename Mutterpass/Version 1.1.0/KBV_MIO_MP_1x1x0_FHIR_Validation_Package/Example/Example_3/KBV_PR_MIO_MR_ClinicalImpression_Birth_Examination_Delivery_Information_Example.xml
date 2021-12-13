@@ -1,0 +1,78 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<ClinicalImpression xmlns="http://hl7.org/fhir">
+  <id value="6e83f5d1-7031-4d48-a3ff-f4da7dcd2a4d" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Birth_Examination_Delivery_Information|1.1.0" />
+  </meta>
+  <status value="completed" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+      <code value="118215003" />
+      <display value="Delivery finding (finding)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Abschluss-Untersuchung/Epikrise-Geburt" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:0dafbded-fb9c-479e-9c18-9f9b835b80f2" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:13e37fe2-cf83-4ae2-bc31-cec96160baee" />
+  </encounter>
+  <effectiveDateTime value="2022-05-01">
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_MR_Pregnancy_Week_And_Day">
+      <extension url="schwangerschaftszeitpunkt">
+        <extension url="schwangerschaftswoche">
+          <valueQuantity>
+            <value value="39" />
+            <unit value="Wochen" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="wk" />
+          </valueQuantity>
+        </extension>
+        <extension url="ergaenzendeTage">
+          <valueQuantity>
+            <value value="2" />
+            <unit value="Tage" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="d" />
+          </valueQuantity>
+        </extension>
+        <extension url="korrektur">
+          <valueBoolean value="false" />
+        </extension>
+        <extension url="kode">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+              <code value="412726003" />
+              <display value="Length of gestation at birth (observable entity)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Schwangerschaftswoche+Tage" />
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </extension>
+    </extension>
+  </effectiveDateTime>
+  <investigation>
+    <code>
+      <text value="Angaben zur Entbindung" />
+    </code>
+    <!-- External Birth -->
+    <item>
+      <reference value="urn:uuid:5f2ffb4e-8abc-4053-b460-b4e2844fce37" />
+    </item>
+  </investigation>
+</ClinicalImpression>

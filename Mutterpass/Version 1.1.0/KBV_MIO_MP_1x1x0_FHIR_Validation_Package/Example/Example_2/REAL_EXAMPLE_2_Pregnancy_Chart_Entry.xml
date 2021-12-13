@@ -1,0 +1,101 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<ClinicalImpression xmlns="http://hl7.org/fhir">
+  <id value="a67909a1-7fa7-4a47-9d57-41c9da56acb1" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Pregnancy_Chart_Entry|1.1.0" />
+  </meta>
+  <identifier>
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+      <valueString value="1" />
+    </extension>
+  </identifier>
+  <status value="completed" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+      <code value="773433004" />
+      <display value="Obstetric antenatal care plan (record artifact)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Gravidogramm" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b77d9c1d-75e9-4413-8261-56b6b8e8e108" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:496fe932-4902-44b1-8a3a-616e998853de" />
+  </encounter>
+  <effectiveDateTime value="2021-02-02">
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_MR_Pregnancy_Week_And_Day">
+      <extension url="schwangerschaftszeitpunkt">
+        <extension url="schwangerschaftswoche">
+          <valueQuantity>
+            <value value="28" />
+            <unit value="Wochen" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="wk" />
+          </valueQuantity>
+        </extension>
+        <extension url="ergaenzendeTage">
+          <valueQuantity>
+            <value value="4" />
+            <unit value="Tage" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="d" />
+          </valueQuantity>
+        </extension>
+        <extension url="korrektur">
+          <valueBoolean value="false" />
+        </extension>
+        <extension url="kode">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+              <code value="1156738004" />
+              <display value="Fetal gestational age in weeks and days (observable entity)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Schwangerschaftswoche+Tage" />
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </extension>
+    </extension>
+  </effectiveDateTime>
+  <assessor>
+    <reference value="urn:uuid:2fa35655-b46e-4baf-8cea-e795eef7e22f" />
+  </assessor>
+  <investigation>
+    <code>
+      <text value="Gravidogrameintrag" />
+    </code>
+    <item>
+      <reference value="urn:uuid:17989fa3-0351-4add-ba79-41b597375cbb" />
+      <!--Blood_Pressure-->
+    </item>
+    <item>
+      <reference value="urn:uuid:fa3d0e89-b84f-4b2d-8cb0-c1d0c7468ee5" />
+      <!--Varicosis-->
+    </item>
+    <item>
+      <reference value="urn:uuid:0ee4bfe2-fcfb-436c-82ae-9615368b0498" />
+      <!--Edema-->
+    </item>
+    <item>
+      <reference value="urn:uuid:849e3eb9-3bcc-48d2-97a5-3ecee9750ddf" />
+      <!--Urine_Sugar-->
+    </item>
+  </investigation>
+  <note>
+    <text value="Zucker ggfs. erneut testen, Blutdruck weiter beobachten" />
+  </note>
+</ClinicalImpression>

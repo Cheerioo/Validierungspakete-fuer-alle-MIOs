@@ -1,0 +1,19 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="0d20fdb0-624d-4899-a8fe-dedeb50ca17d" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Organization|1.1.0" />
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="XX" />
+		<display value="Organisations-ID" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
+    <value value="986337194" />
+  </identifier>
+  <name value="Waldkrankenhaus Beispielhaft" />
+</Organization>

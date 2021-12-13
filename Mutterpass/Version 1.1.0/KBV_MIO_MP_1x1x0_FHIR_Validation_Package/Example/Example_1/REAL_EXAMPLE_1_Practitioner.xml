@@ -1,0 +1,36 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="b9cfa843-3b07-4b02-80f9-3370e3f9563e" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Practitioner|1.1.0" />
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="LANR" />
+		<display value="Lifelong physician number" />
+      </coding>
+    </type>
+    <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
+    <value value="838382202" />
+  </identifier>
+  <name>
+    <use value="official" />
+    <family value="Semmelbruch">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Semmelbruch" />
+      </extension>
+    </family>
+    <given value="Maria" />
+    <prefix value="Dr.">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+        <valueCode value="AC" />
+      </extension>
+    </prefix>
+  </name>
+  <telecom>
+    <system value="phone" />
+    <value value="06151/1111111" />
+  </telecom>
+</Practitioner>

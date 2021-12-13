@@ -1,0 +1,42 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="0dafbded-fb9c-479e-9c18-9f9b835b80f2" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Mother|1.1.0" />
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+        <code value="GKV" />
+		<display value="Gesetzliche Krankenversicherung" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+    <value value="M981183877" />
+  </identifier>
+  <name>
+    <use value="official" />
+    <family value="Mustermann">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Mustermann" />
+      </extension>
+    </family>
+    <given value="Marie" />
+  </name>
+  <birthDate value="1985-01-07" />
+  <address>
+    <type value="both" />
+    <line value="Musterstaße 9">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Musterstraße" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="9" />
+      </extension>
+    </line>
+    <city value="Dresden" />
+    <postalCode value="02139" />
+    <country value="D" />
+  </address>
+</Patient>

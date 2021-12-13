@@ -1,0 +1,33 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="849e3eb9-3bcc-48d2-97a5-3ecee9750ddf" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Urine_Sugar|1.1.0" />
+  </meta>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+      <code value="268556000" />
+      <display value="Urine screening for glucose (procedure)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Zucker" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b77d9c1d-75e9-4413-8261-56b6b8e8e108" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:496fe932-4902-44b1-8a3a-616e998853de" />
+  </encounter>
+  <effectiveDateTime value="2021-02-02" />
+  <performer>
+    <reference value="urn:uuid:2fa35655-b46e-4baf-8cea-e795eef7e22f" />
+  </performer>
+  <valueString value="Zucker" />
+</Observation>

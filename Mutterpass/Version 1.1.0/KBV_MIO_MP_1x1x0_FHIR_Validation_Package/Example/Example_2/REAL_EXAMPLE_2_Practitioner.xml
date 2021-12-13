@@ -1,0 +1,36 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="2fa35655-b46e-4baf-8cea-e795eef7e22f" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Practitioner|1.1.0" />
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="XX" />
+		<display value="Organisations-ID" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
+    <value value="450204765" />
+  </identifier>
+  <name>
+    <use value="official" />
+    <family value="Mustermeier">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Mustermeier" />
+      </extension>
+    </family>
+    <given value="Clara" />
+  </name>
+  <qualification>
+    <code>
+      <coding>
+        <system value="urn:oid:1.3.6.1.4.1.19376.3.276.1.5.11" />
+        <code value="41" />
+        <display value="Hebamme / Entbindungspfleger" />
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

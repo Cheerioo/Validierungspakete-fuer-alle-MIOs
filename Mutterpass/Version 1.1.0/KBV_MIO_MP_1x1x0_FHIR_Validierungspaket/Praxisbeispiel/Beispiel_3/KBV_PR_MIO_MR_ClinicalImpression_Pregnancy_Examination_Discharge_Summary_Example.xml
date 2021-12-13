@@ -1,0 +1,114 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<ClinicalImpression xmlns="http://hl7.org/fhir">
+  <id value="1864daa5-d1dc-408d-8536-48960c698a0c" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_ClinicalImpression_Pregnancy_Examination_Discharge_Summary|1.1.0" />
+  </meta>
+  <status value="completed" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+      <code value="721923008" />
+      <display value="Obstetrics and gynecology discharge summary (record artifact)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Schwangerschaft" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:0dafbded-fb9c-479e-9c18-9f9b835b80f2" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:13e37fe2-cf83-4ae2-bc31-cec96160baee" />
+  </encounter>
+  <effectiveDateTime value="2022-05-02">
+    <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_MR_Pregnancy_Week_And_Day">
+      <extension url="schwangerschaftszeitpunkt">
+        <extension url="schwangerschaftswoche">
+          <valueQuantity>
+            <value value="11" />
+            <unit value="Wochen" />
+            <system value="http://unitsofmeasure.org" />
+            <code value="wk" />
+          </valueQuantity>
+        </extension>
+        <extension url="korrektur">
+          <valueBoolean value="false" />
+        </extension>
+        <extension url="kode">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://snomed.info/sct" />
+              <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+              <code value="424441002" />
+              <display value="Prenatal initial visit (regime/therapy)">
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                  <extension url="content">
+                    <valueString value="Erst-Untersuchung in SSW" />
+                  </extension>
+                </extension>
+              </display>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </extension>
+    </extension>
+  </effectiveDateTime>
+  <investigation>
+    <code>
+      <text value="Abschlussuntersuchungen zur Schwangerschaft" />
+    </code>
+    <item>
+      <reference value="urn:uuid:ad7b047e-1577-45f4-ae26-ac82f5d8864b" />
+      <!-- Alter der Mutter -->
+    </item>
+    <item>
+      <reference value="urn:uuid:19055c48-4042-416b-b61e-b9dbd3076091" />
+      <!--Anzahl der Schwangerschaften (Gravida)-->
+    </item>
+    <item>
+      <reference value="urn:uuid:552c8058-15cb-43da-b3af-0f7cdc0022c5" />
+      <!--Anazahl der Geburten (Para)-->
+    </item>
+    <item>
+      <reference value="urn:uuid:1a025c9b-be57-45f2-8002-1007a30c230d" />
+      <!--Anzahl der Voruntersuchungen-->
+    </item>
+  </investigation>
+  <finding>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+        <code value="416413003" />
+        <display value="Advanced maternal age gravida (finding)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="Schwangere über 35 Jahren" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+    </itemCodeableConcept>
+  </finding>
+  <finding>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+        <code value="16356006" />
+        <display value="Multiple pregnancy (disorder)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="Mehrlingsschwangerschaft" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+    </itemCodeableConcept>
+  </finding>
+</ClinicalImpression>

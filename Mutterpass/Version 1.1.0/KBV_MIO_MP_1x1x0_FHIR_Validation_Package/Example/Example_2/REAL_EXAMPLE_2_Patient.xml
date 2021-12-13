@@ -1,0 +1,33 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="b77d9c1d-75e9-4413-8261-56b6b8e8e108" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Mother|1.1.0" />
+  </meta>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+        <code value="GKV" />
+		<display value="Gesetzliche Krankenversicherung" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+    <value value="Q090297452" />
+  </identifier>
+  <name>
+    <use value="official" />
+    <family value="Mustermann">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Mustermann" />
+      </extension>
+    </family>
+    <given value="Karin" />
+  </name>
+  <birthDate value="1994-09-01" />
+  <address>
+    <type value="both" />
+    <city value="Hamburg" />
+    <country value="D" />
+  </address>
+</Patient>

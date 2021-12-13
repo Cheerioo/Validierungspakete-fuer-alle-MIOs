@@ -1,0 +1,50 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="3d692857-9436-403a-9a11-1d0a9cda0768" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Head_Circumference|1.1.0" />
+  </meta>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+      <code value="169876006" />
+      <display value="Birth head circumference (observable entity)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Kopfumfang" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+    <coding>
+      <system value="http://loinc.org" />
+      <version value="2.68" />
+      <code value="9843-4" />
+      <display value="Head Occipital-frontal circumference">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Kopfumfang" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:d6ed8917-0956-4f5c-b131-fdf05781223d" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:13e37fe2-cf83-4ae2-bc31-cec96160baee" />
+  </encounter>
+  <effectiveDateTime value="2022-05-01" />
+  <performer>
+    <reference value="urn:uuid:0d20fdb0-624d-4899-a8fe-dedeb50ca17d" />
+  </performer>
+  <valueQuantity>
+    <value value="35" />
+    <unit value="cm" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="cm" />
+  </valueQuantity>
+</Observation>

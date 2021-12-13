@@ -1,0 +1,50 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="f19df241-1439-4570-a56c-d8a31b121470" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Birth_Height|1.1.0" />
+  </meta>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+      <code value="169886007" />
+      <display value="Birth length (observable entity)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Körperlänge" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+    <coding>
+      <system value="http://loinc.org" />
+      <version value="2.71" />
+      <code value="89269-5" />
+      <display value="Body height Measured --at birth">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Körperlänge" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:cc62c1af-17ed-4285-81d4-c432d6959f5c" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:13e37fe2-cf83-4ae2-bc31-cec96160baee" />
+  </encounter>
+  <effectiveDateTime value="2022-05-01" />
+  <performer>
+    <reference value="urn:uuid:0d20fdb0-624d-4899-a8fe-dedeb50ca17d" />
+  </performer>
+  <valueQuantity>
+    <value value="52" />
+    <unit value="cm" />
+    <system value="http://unitsofmeasure.org" />
+    <code value="cm" />
+  </valueQuantity>
+</Observation>

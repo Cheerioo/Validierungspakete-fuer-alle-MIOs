@@ -1,0 +1,30 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="d6ed8917-0956-4f5c-b131-fdf05781223d" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Patient_Child|1.1.0" />
+  </meta>
+  <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+    <valueString value="Kind 1 von 2" />
+  </extension>
+  <identifier>
+	<type>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                <code value="MR" />
+				<display value="Medical record number" />
+            </coding>
+        </type>
+        <system value="urn:ietf:rfc:3986" />
+        <value value="urn:uuid:c1f7a112-c0ff-4049-b1c7-d6b79b87e8ef" />
+  </identifier>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="unknown" />
+    </extension>
+	<use value="temp" />
+   </name>
+  <gender value="female"/>
+  <birthDate value="2022-05-01" />
+  <deceasedBoolean value="false" />
+</Patient>

@@ -1,0 +1,37 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="552c8058-15cb-43da-b3af-0f7cdc0022c5" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Para|1.1.0" />
+  </meta>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210731" />
+      <code value="364325004" />
+      <display value="Parity (observable entity)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Para" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:0dafbded-fb9c-479e-9c18-9f9b835b80f2" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:13e37fe2-cf83-4ae2-bc31-cec96160baee" />
+  </encounter>
+  <effectiveDateTime value="2022-05-02" />
+  <performer>
+    <reference value="urn:uuid:0d20fdb0-624d-4899-a8fe-dedeb50ca17d" />
+  </performer>
+  <valueQuantity>
+	<value value="2"/>
+	<system value="http://unitsofmeasure.org"/>
+	<code value="1"/>
+  </valueQuantity>
+</Observation>

@@ -1,0 +1,114 @@
+<!-- Dies ist ein Praxisbeispiel. Die Datei enthält medizinisch-fachlich abgestimmte, praxisnahe Informationen und dient vorrangig dazu, die Zusammenhänge zwischen den Profilen aufzuzeigen. -->
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="17989fa3-0351-4add-ba79-41b597375cbb" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_MR_Observation_Blood_Pressure|1.1.0" />
+  </meta>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20200131" />
+      <code value="75367002" />
+      <display value="Blood pressure (observable entity)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Blutdruck" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+    <coding>
+      <system value="http://loinc.org" />
+      <version value="2.69" />
+      <code value="85354-9" />
+      <display value="Blood pressure panel with all children optional">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Blutdruck" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:b77d9c1d-75e9-4413-8261-56b6b8e8e108" />
+  </subject>
+  <encounter>
+    <reference value="urn:uuid:496fe932-4902-44b1-8a3a-616e998853de" />
+  </encounter>
+  <effectiveDateTime value="2021-02-02" />
+  <performer>
+    <reference value="urn:uuid:2fa35655-b46e-4baf-8cea-e795eef7e22f" />
+  </performer>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20200131" />
+        <code value="271649006" />
+        <display value="Systolic blood pressure (observable entity)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="systolischer Blutdruck" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+      <coding>
+        <system value="http://loinc.org" />
+        <version value="2.69" />
+        <code value="8480-6" />
+        <display value="Systolic blood pressure">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="systolischer Blutdruck" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+      <text value="systolisch" />
+    </code>
+    <valueQuantity>
+      <value value="107" />
+      <unit value="mm Hg" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="mm[Hg]" />
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20200131" />
+        <code value="271650006" />
+        <display value="Diastolic blood pressure (observable entity)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="diastolischer Blutdruck" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+      <coding>
+        <system value="http://loinc.org" />
+        <version value="2.69" />
+        <code value="8462-4" />
+        <display value="Diastolic blood pressure">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="diastolischer Blutdruck" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+      <text value="diastolisch" />
+    </code>
+    <valueQuantity>
+      <value value="60" />
+      <unit value="mm Hg" />
+      <system value="http://unitsofmeasure.org" />
+      <code value="mm[Hg]" />
+    </valueQuantity>
+  </component>
+</Observation>
